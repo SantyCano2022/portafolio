@@ -42,7 +42,7 @@ export default function Projects() {
     const parts = (p.github || '').split('/');
     return parts[parts.length - 1]?.toLowerCase();
   });
-  const EXCLUDED = ['portafolio', 'santycano2022'];
+  const EXCLUDED = ['santycano2022'];
   const extraRepos = repos.filter(
     r =>
       !projectGithubNames.includes(r.name?.toLowerCase()) &&
