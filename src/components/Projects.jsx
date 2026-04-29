@@ -37,13 +37,17 @@ export default function Projects() {
       .catch(() => setLoadingRepos(false));
   }, []);
 
-  // Filter out repos that are already in projects
+  // Filter out repos that are already in projects, plus the portfolio itself and forks
   const projectGithubNames = projects.map(p => {
     const parts = (p.github || '').split('/');
     return parts[parts.length - 1]?.toLowerCase();
   });
+  const EXCLUDED = ['portafolio', 'santycano2022'];
   const extraRepos = repos.filter(
-    r => !projectGithubNames.includes(r.name?.toLowerCase())
+    r =>
+      !projectGithubNames.includes(r.name?.toLowerCase()) &&
+      !EXCLUDED.includes(r.name?.toLowerCase()) &&
+      !r.fork
   );
 
   return (
