@@ -9,6 +9,17 @@ import { FiExternalLink } from 'react-icons/fi';
 
 export const projects = [
   {
+    id: 'crypto-dashboard-2',
+    title: 'Crypto Dashboard 2.0',
+    description:
+      'Dashboard de criptomonedas en tiempo real con pipeline ETL automático. Backend FastAPI extrae datos de CoinGecko cada 3 minutos, almacena en SQLite y expone API REST. Frontend React/Tailwind con gráficas, comparador multi-coin y sistema de alertas por precio. Despliegue full-stack en Vercel + Render.',
+    tech: ['Python', 'FastAPI', 'React', 'Tailwind', 'SQLite', 'APScheduler'],
+    category: ['python', 'data', 'api'],
+    github: 'https://github.com/SantyCano2022/crypto-dashboard-2.0',
+    demo: 'https://crypto-dashboard-2-0.vercel.app',
+    featured: true,
+  },
+  {
     id: 'file-organizer',
     title: 'File Organizer',
     description:
