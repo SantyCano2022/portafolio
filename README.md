@@ -9,6 +9,8 @@ solos — pipelines ETL, APIs robustas y dashboards de datos.
 
 **Live:** <https://portafolio-santy-canodev22.vercel.app>
 
+**Autor:** Santiago Cano Flórez — [@SantyCano2022](https://github.com/SantyCano2022)
+
 ---
 
 ## Stack
