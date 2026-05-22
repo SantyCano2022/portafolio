@@ -1,0 +1,6 @@
+User-agent: *
+
+Disallow: /legal
+Disallow: /es/legal
+Disallow: /privacy
+Disallow: /es/privacy
