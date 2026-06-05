@@ -122,10 +122,8 @@ const setupMesh = () => {
 
   mesh.frustumCulled = false;
 
-  const allNames: string[] = [];
   mesh.traverse((child) => {
     if (child instanceof Mesh) {
-      allNames.push(child.name);
       const mat = getMaterial(child.name);
       if (!mat) return;
       child.material = mat;
@@ -140,7 +138,6 @@ const setupMesh = () => {
       }
     }
   });
-  console.log("[AVATAR DEBUG] mesh names:", allNames);
 
   const brain = mesh.getObjectByName("brain") as Mesh;
   if (brain) {
