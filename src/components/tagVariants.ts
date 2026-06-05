@@ -36,7 +36,11 @@ export type TagVariant =
   | "vite"
   | "vitest"
   | "pwa"
-  | "framermotion";
+  | "framermotion"
+  | "n8n"
+  | "telegram"
+  | "groq"
+  | "turborepo";
 
 export const tagLabels = {
   three: "Three.js",
@@ -77,4 +81,8 @@ export const tagLabels = {
   vitest: "Vitest",
   pwa: "PWA",
   framermotion: "Framer Motion",
+  n8n: "n8n",
+  telegram: "Telegram Bot",
+  groq: "Groq Llama 3.3",
+  turborepo: "Turborepo",
 } as const satisfies Record<TagVariant, string>;
